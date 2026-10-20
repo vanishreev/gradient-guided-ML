@@ -222,20 +222,20 @@ def gradient_similarity(previous, current):
 # STEP 08: INITIALIZE MODEL AND OPTIMIZER
 # ============================================================
 
-if not INITIAL_WEIGHTS_PATH.exists():
-    raise FileNotFoundError(
-        f"Initial weights not found: {INITIAL_WEIGHTS_PATH}"
-    )
-
+torch.manual_seed(RANDOM_SEED)
 model = DigitClassifier()
 
-model.load_state_dict(
-    torch.load(
-        INITIAL_WEIGHTS_PATH,
-        map_location="cpu",
-        weights_only=True
+if INITIAL_WEIGHTS_PATH.exists():
+    model.load_state_dict(
+        torch.load(
+            INITIAL_WEIGHTS_PATH,
+            map_location="cpu",
+            weights_only=True
+        )
     )
-)
+else:
+    INITIAL_WEIGHTS_PATH.parent.mkdir(parents=True, exist_ok=True)
+    torch.save(model.state_dict(), INITIAL_WEIGHTS_PATH)
 
 optimizer = torch.optim.SGD(
     model.parameters(),

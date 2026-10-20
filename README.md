@@ -122,7 +122,6 @@ Results are saved by architecture, seed, and configuration under `output/`. The 
 
 | Path | Purpose |
 |---|---|
-| [`script/main.py`](script/main.py) | Initial data preparation and baseline exploration |
 | [`script/run_fixed_lr_experiments.py`](script/run_fixed_lr_experiments.py) | Configurable fixed-rate SGD experiments |
 | [`script/run_scheduled_lr_experiments.py`](script/run_scheduled_lr_experiments.py) | Configurable scheduled SGD experiments |
 | [`script/run_gradient_guided.py`](script/run_gradient_guided.py) | Gradient-guided controller, training, and step logging |
