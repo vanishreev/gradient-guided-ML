@@ -1,0 +1,25 @@
+# Local environments and interpreter files
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Downloaded data and private or local settings
+data/
+.env
+.env.*
+.vscode/
+.idea/
+.DS_Store
+
+# Working documents and generated experiment outputs
+docs/
+output/
+*.pt
+*.pth
+*.ckpt
+
+# Superseded local drafts
+Gradient_Guided_ML_Report.pdf
+Gradient_Guided_ML_Reference_Guide_Compatible.pdf
+poster-preview.png

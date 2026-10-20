@@ -1,0 +1,4 @@
+method,hidden_neurons,random_seed,test_accuracy,test_loss,correct_predictions,total_predictions
+Fixed SGD (LR 0.60),256,42,0.983,0.0612388645940111,9830,10000
+Scheduled SGD (S13),256,42,0.9827,0.05985726538274903,9827,10000
+Gradient-Guided SGD,256,42,0.9806,0.06541044652108685,9806,10000

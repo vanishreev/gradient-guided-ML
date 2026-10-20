@@ -1,0 +1,18 @@
+{
+    "experiment_id": "GG_STR0.500_WEAK0.375_NEG0.500_THR0.500",
+    "hidden_neurons": 256,
+    "random_seed": 42,
+    "batch_size": 64,
+    "epochs": 10,
+    "target_accuracy": 0.97,
+    "base_learning_rate": 0.5,
+    "strong_threshold": 0.5,
+    "strong_learning_rate": 0.5,
+    "weak_learning_rate": 0.375,
+    "negative_learning_rate": 0.5,
+    "architecture": "784-256-ReLU-10",
+    "optimizer": "SGD",
+    "dataset": "MNIST",
+    "validation_frequency": "once per epoch",
+    "pytorch_version": "2.14.1"
+}

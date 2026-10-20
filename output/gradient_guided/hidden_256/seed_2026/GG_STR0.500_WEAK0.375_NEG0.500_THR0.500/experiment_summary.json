@@ -1,0 +1,22 @@
+{
+    "experiment_id": "GG_STR0.500_WEAK0.375_NEG0.500_THR0.500",
+    "hidden_neurons": 256,
+    "random_seed": 2026,
+    "final_accuracy": 0.9776666666666667,
+    "best_accuracy": 0.9784166666666667,
+    "best_epoch": 7,
+    "final_loss": 0.010802978589432313,
+    "total_seconds": 22.443510458047967,
+    "total_steps": 7500,
+    "average_learning_rate": 0.45113333333333333,
+    "target_accuracy": 0.97,
+    "target_epoch": 3,
+    "target_steps": 2250,
+    "target_seconds": 6.710295916011091,
+    "gradient_category_counts": {
+        "strong": 0,
+        "weak": 2932,
+        "negative": 4567,
+        "undefined": 1
+    }
+}

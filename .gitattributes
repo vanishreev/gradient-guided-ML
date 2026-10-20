@@ -1,0 +1,4 @@
+# Treat final artifacts as binary and preserve recorded CSV bytes.
+*.pdf binary
+*.png binary
+*.csv -text whitespace=cr-at-eol
